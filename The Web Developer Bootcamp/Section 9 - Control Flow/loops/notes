@@ -1,0 +1,28 @@
+
+
+----------- WHILE LOOPS ------------
+
+while (someCondition) {
+    //run some code
+}
+
+
+var count = 1;
+
+while(count < 6) {
+    console.log("count is: " + count);
+    count++;
+}
+
+//count is 1 ... //count is 5
+
+______________________________
+
+var str = "hello";
+
+var count = 0;
+
+while (count < str.length) {
+    console.log(str[count]);
+    count++;
+}

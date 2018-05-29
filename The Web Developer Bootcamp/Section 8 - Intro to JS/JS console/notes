@@ -1,0 +1,26 @@
+PRIMITIVES
+//NUMBERS
+4 (whole) 9.3 (fractional) -10 (negative)
+
+//Strings
+"Hello world"
+"43"
+
+//Booleans
+true and false
+
+//null and undefined
+null and undefined can be set to any variable
+
+MATH
+//Modulo: % divides and returns the remainder
+
+VARIABLES
+//Containers that store values
+
+
+//////////////////////////////////
+METHODS
+-alert
+-prompt
+-console.log

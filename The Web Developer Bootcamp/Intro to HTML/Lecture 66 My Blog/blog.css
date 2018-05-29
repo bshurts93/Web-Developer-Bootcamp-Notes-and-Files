@@ -1,0 +1,37 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 30px;
+}
+
+.blog-box {
+    width: 50%;
+    margin-left: 25%;
+    border: solid 20px #bdc3c7;
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+
+.date {
+    text-transform: uppercase;
+    color: #3498db;
+    letter-spacing: 5px;
+}
+
+.article {
+    border-bottom: solid 2px rgba(224, 224, 224, 0.71);
+    margin-bottom: 10px;
+}
+
+.article-last {
+    margin-bottom: 10px;
+}
+
+.first-p {
+    border-left: 7px solid #bdc3c7;
+    padding-left: 7px;
+}
+

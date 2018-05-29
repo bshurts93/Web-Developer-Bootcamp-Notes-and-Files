@@ -1,0 +1,62 @@
+OPERATORS
+
+if x = 5 and y = 9
+
+AND - && 
+ex. x < 10 && x !== 5 --> false
+   (true)      (false)
+   
+*if the left side of && is false, it short circuits to automatically evaluating to false
+   
+OR - ||
+ex. y > 9 || x === 5 --> true
+    (false)  (true)
+    
+NOT - !
+ex. !(x === y) --> true
+
+----------------------------------------------------------
+var x = 10;
+var y = "a"
+
+y === "b" || x >= 10
+(false)      (true)
+evaluates to true
+
+----------------------------------------------------------
+
+var x = 3;
+var y = 8;
+
+!(x == "3" || x === y) && !(y != 8 && x <= y)
+  !(true   ||   false) &&  !(false && true)
+       (false)         &&       (true)
+        evaluates to true
+        
+----------------------------------------------------------
+
+var str = ""
+var msg = "haha!"
+var isFunny = "false"
+
+!(( str || mgs ) && isFunny)
+!( (false || true) && true )
+! (true && true)
+false
+
+----------------------------------------------------------
+
+CONDITIONALS
+
+
+
+
+
+
+
+
+
+
+
+
+

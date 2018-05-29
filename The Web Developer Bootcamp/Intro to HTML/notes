@@ -1,0 +1,26 @@
+Div = generic container that is a block level element (takes up its own line)
+Span = generic container that is an inline level element (does not break up content)
+
+<form action="#">   URL to send user data (send request)
+<form method="#>    Getting data (get request)
+<form type="#">     Determines what kind of data is to be taken
+
+Radio Button: giving two inputs the same name attribute will link them
+Buttons: if a button is the last element in the form, it will submit.
+
+
+---------CSS UNIT---------
+Cascading Style Sheets: the 'adjectives'
+
+SELECTORS
+- Element: li {}
+- Class: .li
+- ID: #li
+- Star (*): * {} (selects everything on the page)
+- Descendant: li a {} (selects the element inside the parent)
+- Adjacent: h4 + ul (selects all ul after any h4, as a sibling)
+- Attribute: a[href="http://www.google.com"] {} (selects an attribute attached to an element)
+- nth of type: ul:nth-of-type(3) {} (selects a certain element in a given group)
+
+- Specificity: elements < classes < IDs < inline styles
+
