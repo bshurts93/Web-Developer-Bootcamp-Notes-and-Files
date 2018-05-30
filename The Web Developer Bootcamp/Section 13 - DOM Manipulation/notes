@@ -1,0 +1,38 @@
+DOM: Document Object Model
+- The interface between your JavaScript and HTML + CSS
+- Everything in the browswer is stored in the document object
+- SELECT then MANIPULATE
+    ex. 
+    var h1 = document.querySelector("h1"); ---> selected
+    h1.style.color = "pink";               ---> manipulated
+    
+    ex.
+    var body = document.querySelector("body"); ---> selected
+    var isBlue = false
+    
+    setInterval (function (){
+        if (isBlue) {
+        body.style.background = "white";
+        } else {
+        bodu.style.background = "#3498db";
+        }
+        isBlue = !isBlue;
+    }, 1000);                                 ---> manipulated
+
+
+document.querySelector - if id, need "#myID" --- if class, need ".myID"
+
+querySelector: returns first identified element
+querySelectorAll: returns all identified elements
+
+do
+5 types of selectors:
+- getElementByID: takes a string argument and returns the one element with a matching ID
+
+- getElementsByClassName: takes a string argument and returns a list of elements that have a matching       class name
+
+- getElementsByTagName: returns a list of all elements of a given tag name (ex. li, h1, p)
+
+- document.querySelector: returns the first element that matches a given CSS selector
+
+- document.querySelectorAll: returns a list of elements that match a given CSS selector
