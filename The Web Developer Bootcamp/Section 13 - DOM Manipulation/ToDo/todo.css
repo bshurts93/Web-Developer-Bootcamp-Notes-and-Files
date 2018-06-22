@@ -1,0 +1,20 @@
+* {
+    color: #44b9f7;
+}
+
+body {
+    background-color: #5d5d5d;
+}
+
+
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+    color: #ff4444;
+}
+
+.selected {
+    color: #4df0b8;
+}
+

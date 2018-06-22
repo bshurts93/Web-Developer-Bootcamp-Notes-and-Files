@@ -25,8 +25,8 @@ document.querySelector - if id, need "#myID" --- if class, need ".myID"
 querySelector: returns first identified element
 querySelectorAll: returns all identified elements
 
-do
-5 types of selectors:
+
+5 TYPES OF SELECTORS:
 - getElementByID: takes a string argument and returns the one element with a matching ID
 
 - getElementsByClassName: takes a string argument and returns a list of elements that have a matching       class name
@@ -36,3 +36,38 @@ do
 - document.querySelector: returns the first element that matches a given CSS selector
 
 - document.querySelectorAll: returns a list of elements that match a given CSS selector
+
+
+
+TEXT CONTENT vs INNER HTML
+el.textContent = extract only text and return a string
+el.innerHTML = returns a string as well as HTML elements within the selection
+
+
+GET ATTRIBUTE and SET ATTRIBUTE
+el.getAttribute("some-att") will return any given attribute 
+el.setAttribute("some-att", "some-change") will select the attribute and change it to the second argument
+
+
+
+LOOPS TO CHANGE ATTRIBUTES - example
+
+var links = document.getElementsByTagName("a");
+
+for (i = 0; i < links.length; i++) {
+    links[i].setAttribute("href", "http://www.bing.com")
+}
+
+
+EVENTS
+- addEventListener: accepts two arguments. First is the type of event, second is code to be run
+ex. 
+button.addEventListener("click", function() {
+    console.log("someone clikced the button!")
+});
+
+
+
+
+
+
