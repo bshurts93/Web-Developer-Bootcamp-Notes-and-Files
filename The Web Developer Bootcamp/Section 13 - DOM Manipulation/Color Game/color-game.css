@@ -1,10 +1,48 @@
+/* HTML ELEMENTS */
+
 body {
     background-color: #232323;
+    margin: 0;
+    font-family: "Avenir";
 }
 
 h1 {
     color: white;
+    text-align: center;
+    background-color: steelblue;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 20px 0;
+    transition: background-color 0.4s;
 }
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 2px;
+    transition: all 0.4s;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+
+
+span {
+    font-family: "Avenir";
+}
+
+/* CLASSES */
 
 .square {
     width: 30%;
@@ -12,13 +50,46 @@ h1 {
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    border-radius: 15%;
+    transition: background-color 0.4s;
 }
 
 .container {
     max-width: 600px;
     margin: 0 auto;
+    padding-top: 30px;
 }
 
-span {
+.selected {
+    background-color: steelblue;
     color: white;
+}
+
+
+/* IDs */
+
+#color-display {
+    font-size: 200%;
+}
+
+#stripe {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+#stripe button {
+    font-size: 120%;
+}
+
+#message {
+    display: inline-block;
+    width: 15%;
+    font-family: "Avenir";
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: steelblue;
+    font-size: 120%;
 }
