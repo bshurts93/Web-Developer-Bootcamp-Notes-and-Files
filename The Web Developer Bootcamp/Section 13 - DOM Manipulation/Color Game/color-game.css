@@ -56,14 +56,23 @@ span {
 
 .container {
     max-width: 600px;
+    height: 440px;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 30px;    
 }
 
 .selected {
     background-color: steelblue;
     color: white;
 }
+
+.scores {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 
 
 /* IDs */
@@ -79,7 +88,14 @@ span {
     color: black;
 }
 
-#stripe button {
+#stripe-bottom {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+#stripe button, #stripe-bottom button {
     font-size: 120%;
 }
 
@@ -93,3 +109,7 @@ span {
     color: steelblue;
     font-size: 120%;
 }
+
+
+
+
