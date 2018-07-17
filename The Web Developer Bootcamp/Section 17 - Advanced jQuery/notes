@@ -1,0 +1,42 @@
+EVENTS IN JQUERY
+
+- .click() : insert a defined fn or anonymous fn (more common) to exectute on targeted click.
+
+    $("h1").click(function(){
+	   alert("h1 clicked");	
+    });
+
+- .keypress : fires a function upon the press of a key, that can be narrowed to a specific key with a code, found under the 'which' property. To target enter key:
+    
+    $("input").keypress(function(event){
+        if (event.which === 13) {
+            alert("you hit enter");
+        }
+    })
+
+- .on() : similar to addEventListener, takes the name of an event, then the function to be fired.
+    
+    $("button").on("mouseenter", function(){
+	   $(this).css("background", "red");
+	   $(this).css("font-weight", "bold");
+    });
+    
+    
+DIFFERENCE BETWEEN click() AND on("click")
+- click() only adds listeners for existing elements
+- on() will add listeners for all potential future elements
+
+
+JQUERY EFFECTS
+- fadeOut() : animates from full opacity to zero opacity. Can provide duration and callback fn.
+
+
+
+
+
+
+
+
+
+
+

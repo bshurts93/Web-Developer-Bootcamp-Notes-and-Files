@@ -1,0 +1,50 @@
+REFACTORING A TOGGLED STYLE WITH JQUERY
+
+using all jQuery to toggle style on a click:
+
+$("li").on("click", function(){
+    // if li is gray
+    if($(this).css("color") === "rgb(128, 128, 128)") {
+        // turn it black
+        $(this).css({
+            color: "black",
+            textDecoration: "none"
+        });
+    } else {
+        // if li is black
+        $(this).css({
+            color: "gray",
+            textDecoration: "line-through"
+        });
+    }
+});
+
+AFTER CREATING THIS CLASS:
+
+    .completed {
+        color: black;
+        text-decoration: linethrough;
+    }
+
+CHANGE THE CODE TO THIS:
+
+    $("li").on("click", function(){
+        $(this).toggleClass("completed");
+    });
+    
+    
+    
+    
+EVENT BUBBLING
+
+- Events will 'bubble' up from child elements up through parents until it reaches the body and html level
+
+
+CLICK() vs ON("CLICK") IN THIS PROJECT
+- click() doesnt work because it does not account for elements that are not there when the page first loads, like any additional todos we add to the list
+- on('click') can't be simply swapped out becuase it is still firing on elements that are on the page upon loading since the listener is attaced to "li"
+- SOLUTION $("ul").on("click", "li", function())
+    This allows the listener to act upon the ul, and if the li inside is clicked, then the function runs. This allows for new elements to be added after loading the page and still be acted upon by the listener
+
+
+
